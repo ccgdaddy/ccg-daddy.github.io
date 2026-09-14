@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CCGs - Clicker Game</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    header {
+      background: #181818;
+      padding: 20px;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .game {
+      margin: 80px auto;
+      max-width: 500px;
+    }
+
+    button {
+      font-size: 30px;
+      padding: 25px 50px;
+      border: 0;
+      border-radius: 15px;
+      cursor: pointer;
+      background: #333;
+      color: white;
+    }
+
+    button:hover {
+      background: #444;
+    }
+
+    #score {
+      font-size: 50px;
+      margin: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="../games.html">← CCGs Unblocked Games</a>
+</header>
+
+<div class="game">
+  <h1>🎮 Clicker Game</h1>
+
+  <div id="score">0</div>
+
+  <button onclick="clickGame()">CLICK!</button>
+</div>
+
+<script>
+  let score = 0;
+
+  function clickGame() {
+    score++;
+    document.getElementById("score").textContent = score;
+  }
+</script>
+
+</body>
+</html>
